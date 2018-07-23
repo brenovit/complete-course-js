@@ -1,9 +1,11 @@
 complete-course-js
 
-install the module 
+Install the module simple-autoreload-server
 
 > npm install -g simple-autoreload-server
 
-to start the project follows the command inside of this folder
+Run the follows command inside of project folder
 
-> autoreload-server -w "**/**.{html,css,js}" -t ./ -p 8080 -b index.html
+> autoreload-server -w "**/**.{html,css,js}" -t ./ -p 8080 -b
+
+Select the file 'index.html' on page start up
