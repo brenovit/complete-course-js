@@ -1,4 +1,53 @@
-var msg = 'Hello Word'
+// === Template Literal
+// == Exercise 1
+var name = "Breno";
+var vocation = "programmer";
+
+console.log(`${name} is a ${vocation}`);
+// == Exercise 2
+var price = 25;
+var newPrice = 10;
+var percent = (((price - newPrice) / (price)) * 100);
+
+var msg = `You saved ${percent}% on this sale`;
+console.log(msg);
+/*var msg = true;
+
+console.log(msg);
+var type = typeof msg;
+console.log(type);
+console.log(msg.length);
+
+msg = 'Hello \
+Breno \
+of the World!';
+
+console.log(msg);
+console.log(typeof msg);
+console.log(msg.length);
+
+msg = 'Hello \n \
+Breno \n \
+of the World!';
+
+console.log(msg);
+console.log(typeof msg);
+console.log(msg.length);
+
+var name = 37,
+    message = `Hello ${name}`;
+
+console.log(message);
+
+var count  = 17,
+    price = 0.5,
+    message = `${count} itens cost $${(count * price).toFixed(2)}`;
+
+console.log(message);
+*/
+
+//==== String Methods
+/*var msg = 'Hello Word'
 
 console.log('1 - ' + msg.startsWith('H'))
 console.log('2 - ' + msg.endsWith('d'))
@@ -14,4 +63,4 @@ console.log('9 - ' + msg.includes('o', 5))
 
 console.log('x'.repeat(3))
 console.log('bre'.repeat(2))
-console.log('no'.repeat(5))
+console.log('no'.repeat(5))*/
