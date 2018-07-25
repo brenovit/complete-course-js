@@ -1,3 +1,14 @@
+//let and const in loops
+var funcs = [];
+
+for(let i=0; i< 10; i++){
+    funcs.push(function(){console.log(i);});
+}
+
+funcs.forEach(function(func) {
+    func();
+});
+
 // === let and const in block level scope
 /*
 function getValue(condition){
