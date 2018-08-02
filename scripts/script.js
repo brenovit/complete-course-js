@@ -1,3 +1,41 @@
+// using default parameters
+/*
+function getValue(){
+    return 5;
+}
+
+function add(first, second = getValue()){
+    return first + second;
+}
+
+console.log(add(1,1));
+console.log(add(1));
+
+function makeRequest(url, timeout, callback){
+    timeout = timeout || 3000;
+    callback = callback || function(){
+
+    };
+}
+
+function makeRequestNew(url, timeout = 3000, callback = function(){}){
+    console.log(timeout);
+}
+
+makeRequestNew('/foo', 5000);
+
+function mixArgs(first, second){
+    console.log(first === arguments[0]);
+    console.log(second === arguments[1]);
+    first = "c";
+    second = "d";
+    console.log(first === arguments[0]);
+    console.log(second === arguments[1]);
+}
+
+mixArgs("a","b");
+
+/*
 //let and const in loops
 var funcs = [];
 
@@ -8,7 +46,7 @@ for(let i=0; i< 10; i++){
 funcs.forEach(function(func) {
     func();
 });
-
+//*/
 // === let and const in block level scope
 /*
 function getValue(condition){
@@ -46,7 +84,7 @@ function getValue(condition){
 }
 
 console.log(getValue(true));
-*/
+//*/
 // === Template Literal
 
 // == Exercise 1
