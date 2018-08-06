@@ -1,5 +1,13 @@
-// Rest parameters
-function sortRestArgs(...args){
+// === Spread Parameters
+let val1 = 25;
+let val2 = 50;
+let values = [10,20,30,40]
+
+//console.log(Math.max.apply(Math, values));
+console.log(Math.max(...values));
+
+// === Rest parameters
+/*function sortRestArgs(...args){
     return args.sort();
 }
 
@@ -18,7 +26,7 @@ function multiply(multiplier, ...args){
 
 console.log(multiply(5,1,2,3));
 
-/*function add(...args){
+function add(...args){
     let [a, b, c] = args;
     return a + b +c;
 }
@@ -28,7 +36,7 @@ console.log(add(1,2));
 console.log(add(1,2,3));
 console.log(add(1,2,3,4));*/
 
-// using default parameters
+// === using default parameters
 /*
 function getValue(){
     return 5;
@@ -64,9 +72,9 @@ function mixArgs(first, second){
 }
 
 mixArgs("a","b");
-
+*/
+// === let and const in loops
 /*
-//let and const in loops
 var funcs = [];
 
 for(let i=0; i< 10; i++){
@@ -76,7 +84,7 @@ for(let i=0; i< 10; i++){
 funcs.forEach(function(func) {
     func();
 });
-//*/
+*/
 // === let and const in block level scope
 /*
 function getValue(condition){
@@ -114,7 +122,8 @@ function getValue(condition){
 }
 
 console.log(getValue(true));
-//*/
+*/
+
 // === Template Literal
 
 // == Exercise 1
@@ -168,7 +177,7 @@ var count  = 17,
 console.log(message);
 */
 
-//==== String Methods
+// === String Methods
 
 /*var msg = 'Hello Word'
 
@@ -186,4 +195,5 @@ console.log('9 - ' + msg.includes('o', 5))
 
 console.log('x'.repeat(3))
 console.log('bre'.repeat(2))
-console.log('no'.repeat(5))*/
+console.log('no'.repeat(5))
+*/
