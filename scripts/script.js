@@ -1,3 +1,33 @@
+// Rest parameters
+function sortRestArgs(...args){
+    return args.sort();
+}
+
+function sortMyArgs(){
+    return arguments.sort();
+}
+
+console.log(sortRestArgs(5,6,8,7));
+console.log(sortMyArgs(5,6,8,7));
+
+function multiply(multiplier, ...args){
+    return args.map(el => {
+        return multiplier * el;
+    });
+}
+
+console.log(multiply(5,1,2,3));
+
+/*function add(...args){
+    let [a, b, c] = args;
+    return a + b +c;
+}
+
+console.log(add(1));
+console.log(add(1,2));
+console.log(add(1,2,3));
+console.log(add(1,2,3,4));*/
+
 // using default parameters
 /*
 function getValue(){
