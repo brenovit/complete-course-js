@@ -1,11 +1,45 @@
+// === name Property
+function doSome(){
+
+}
+
+var doAnotherSome = function(){
+
+}
+
+console.log(doSome.name);
+console.log(doAnotherSome.name);
+
+var doMyThing = function doMyThingAgain(){
+    console.log('My thing');
+}
+
+console.log(doMyThing.name);
+
+var person = {
+    get firstName(){
+        return "Breno";
+    },
+    sayName: function(){
+        console.log(this.name);
+    }
+}
+
+console.log(person.sayName.name);
+
+var descriptor = Object.getOwnPropertyDescriptor(person, "firstName");
+
+console.log(descriptor.get.name);
+
 // === Spread Parameters
+/*
 let val1 = 25;
 let val2 = 50;
 let values = [10,20,30,40]
 
 //console.log(Math.max.apply(Math, values));
 console.log(Math.max(...values));
-
+*/
 // === Rest parameters
 /*function sortRestArgs(...args){
     return args.sort();
