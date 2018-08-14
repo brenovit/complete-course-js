@@ -1,6 +1,26 @@
-// === name Property
-function doSome(){
+// === block level functions
 
+// === new.target
+/*
+function Person(name){
+    //if( this instanceof Person){
+    if( typeof new.target !== "undefined"){
+        this.name = name;
+    } else {
+        throw new Error("You must use new with Person");
+    }
+}
+
+var person = new Person("Breno");
+var justObj = Person.call(person, "John");
+
+console.log(person);
+console.log(justObj);
+*/
+// === name Property
+/*
+function doSome(){
+    
 }
 
 var doAnotherSome = function(){
@@ -30,7 +50,7 @@ console.log(person.sayName.name);
 var descriptor = Object.getOwnPropertyDescriptor(person, "firstName");
 
 console.log(descriptor.get.name);
-
+*/
 // === Spread Parameters
 /*
 let val1 = 25;
