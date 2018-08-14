@@ -1,3 +1,35 @@
+// === arrow functions
+var reflectA = value => value;
+var reflect = function(value) {
+  return value;
+};
+console.log(reflect(2));
+console.log(reflectA(3));
+
+var sumA = (num1, num2) => num1 + num2;
+var sum = function(num1, num2) {
+  return num1 + num2;
+};
+console.log(sum(1, 2));
+console.log(sumA(3, 2));
+
+var getNameA = () => "Breno Nunes";
+var getName = function() {
+  return "breno";
+};
+console.log(getName());
+console.log(getNameA());
+
+var getTemplateA = id => ({ id: id, name: "TempA" });
+var getTemplate = function(id) {
+  return {
+    id: id,
+    name: "Temp"
+  };
+};
+
+console.log(getTemplate(5));
+console.log(getTemplateA(6));
 // === block level functions
 
 // === new.target
