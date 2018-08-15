@@ -1,4 +1,27 @@
+// === arrow function - part2
+var values = [10, 2, 1, 15, 20];
+
+var resultA = values.sort((a, b) => a - b);
+var result = values.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(resultA);
+console.log(result);
+
+function myFunction() {
+  //console.log(arguments[0]);
+  return () => arguments[0];
+}
+var myValue = myFunction("Breno");
+console.log(myValue());
+
+var comparator = (a, b) => a - b;
+console.log(typeof comparator);
+console.log(comparator instanceof Function);
+
 // === arrow functions
+/*
 var reflectA = value => value;
 var reflect = function(value) {
   return value;
@@ -30,6 +53,7 @@ var getTemplate = function(id) {
 
 console.log(getTemplate(5));
 console.log(getTemplateA(6));
+*/
 // === block level functions
 
 // === new.target
