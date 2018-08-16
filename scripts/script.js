@@ -1,4 +1,29 @@
+// === objects literals - syntax
+function createPerson(name, age) {
+  return {
+    name,
+    age
+  };
+}
+
+var person = {
+  name: "Breno",
+  sayName() {
+    console.log(this.name);
+  }
+};
+
+var person = {},
+  lastName = "last name";
+
+person["first name"] = "Breno";
+person[lastName] = "Arantes";
+
+console.log(person["first name"]);
+console.log(person[lastName]);
+console.log(person.lastName);
 // === IIFE and 'this' keyword
+/*
 var PageHandler = {
   id: "123456",
   init: function() {
