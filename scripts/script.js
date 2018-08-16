@@ -1,4 +1,30 @@
+// === IIFE and 'this' keyword
+var PageHandler = {
+  id: "123456",
+  init: function() {
+    document.addEventListener(
+      "click",
+      event => this.doSomething(event.type),
+      false
+    );
+  },
+  doSomething: function(type) {
+    console.log("Handling " + type + " for " + ths.id);
+  }
+};
+/*
+var person = (name => {
+  return {
+    getName: function() {
+      return name;
+    }
+  };
+})("Breno");
+
+console.log(person.getName());
+*/
 // === arrow function - part2
+/*
 var values = [10, 2, 1, 15, 20];
 
 var resultA = values.sort((a, b) => a - b);
@@ -19,7 +45,7 @@ console.log(myValue());
 var comparator = (a, b) => a - b;
 console.log(typeof comparator);
 console.log(comparator instanceof Function);
-
+*/
 // === arrow functions
 /*
 var reflectA = value => value;
