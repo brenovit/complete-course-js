@@ -1,4 +1,21 @@
+// === new methods for objects
+console.log("1 : " + (+0 == -0));
+console.log("2 : " + (+0 === -0));
+console.log("3 : " + Object.is(+0, -0));
+
+console.log("4 : " + (NaN == NaN));
+console.log("5 : " + (NaN === NaN));
+console.log("6 : " + Object.is(NaN, NaN));
+
+console.log("7 : " + (5 == 5));
+console.log("8 : " + (5 == "5"));
+console.log("9 : " + (5 === 5));
+console.log("10 : " + (5 === "5"));
+console.log("11 : " + Object.is(5, 5));
+console.log("12 : " + Object.is(5, "5"));
+
 // === objects literals - syntax
+/*
 function createPerson(name, age) {
   return {
     name,
@@ -22,6 +39,7 @@ person[lastName] = "Arantes";
 console.log(person["first name"]);
 console.log(person[lastName]);
 console.log(person.lastName);
+*/
 // === IIFE and 'this' keyword
 /*
 var PageHandler = {
